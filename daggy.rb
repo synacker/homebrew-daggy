@@ -13,7 +13,7 @@ class Daggy < Formula
 
   patch do
     url "https://raw.githubusercontent.com/synacker/homebrew-daggy/master/mustache.patch"
-    sha256 "8ccee97c0e38c385b934e079371da42de8d2997488186f82969e1965b8b86ddc"
+    sha256 "58ca775e378ea16cd0900be5fc325cf5bcbb2ab46d35d03af6c7f2f3a9f54b04"
   end
 
   def install
