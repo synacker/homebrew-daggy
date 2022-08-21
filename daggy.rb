@@ -19,6 +19,7 @@ class Daggy < Formula
   def install
     system "wget", "https://raw.githubusercontent.com/kainjow/Mustache/master/mustache.hpp", "-O", "src/Daggy/mustache.hpp"
     system "mkdir", "build"
+    
     Dir.chdir('build')
     system "cmake", "-D", "VERSION=2.1.2", "-D", "CMAKE_INSTALL_PREFIX:PATH=#{prefix}", "-D", "CMAKE_BUILD_TYPE=Release", "../src"
     system "make", "all"
