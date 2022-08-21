@@ -12,7 +12,7 @@ class Daggy < Formula
   depends_on "libssh2"
 
   patch do
-    url "https://raw.githubusercontent.com/synacker/daggy_homebrew/master/mustache.patch"
+    url "https://raw.githubusercontent.com/synacker/homebrew-daggy/master/mustache.patch"
     sha256 "8ccee97c0e38c385b934e079371da42de8d2997488186f82969e1965b8b86ddc"
   end
 
