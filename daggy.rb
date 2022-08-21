@@ -21,7 +21,7 @@ class Daggy < Formula
     system "mkdir", "build"
     
     Dir.chdir('build')
-    system "cmake", "-D", "VERSION=2.1.2", "-D", "CMAKE_INSTALL_PREFIX:PATH=#{prefix}", "-D", "CMAKE_BUILD_TYPE=Release", "../src"
+    system "cmake", "-D", "VERSION=2.1.2", "-D", "CMAKE_INSTALL_PREFIX:PATH=#{prefix}", "-D", "CMAKE_BUILD_TYPE=Release", "-D", "BUILD_SHARED_LIBS=ON", "../src"
     system "make", "all"
     system "make", "install"
   end
