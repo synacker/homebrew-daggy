@@ -18,7 +18,8 @@ class Daggy < Formula
   def install
     resource("mustache").stage { cp_r "mustache.hpp", buildpath/"src/mustache.hpp" }
 
-    system "cmake", "-D", "VERSION=#{version}.0", "-D", "BUILD_SHARED_LIBS=ON", "-S", "src", "-B", "build", *std_cmake_args
+
+    system "cmake", "-DVERSION=#{version}.0", "-DBUILD_SHARED_LIBS=ON", "-DCMAKE_INSTALL_RPATH=#{rpath}", "-S", "src", "-B", "build", *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
