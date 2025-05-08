@@ -11,8 +11,8 @@ class DaggyAT220 < Formula
   depends_on "yaml-cpp"
 
   resource "mustache" do
-    url "https://github.com/kainjow/Mustache/blob/04277d5552c6e46bee41a946b7d175a660ea1b3d/mustache.hpp"
-    sha256 "63222e3cce951ec557245de4186886640076fb2ddfab621ee4ab88708c12a014"
+    url "https://github.com/kainjow/Mustache/archive/refs/tags/v4.1.tar.gz"
+    sha256 "acd66359feb4318b421f9574cfc5a511133a77d916d0b13c7caa3783c0bfe167"
   end
 
   def install
