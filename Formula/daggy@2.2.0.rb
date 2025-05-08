@@ -16,7 +16,7 @@ class DaggyAT220 < Formula
   end
 
   def install
-    resource("mustache").stage { cp_r "mustache.hpp", "src" }
+    resource("mustache").stage { cp_r "mustache.hpp", buildpath/"src/mustache.hpp" }
 
     system "cmake", "-D", "VERSION=#{version}.0", "-D", "BUILD_SHARED_LIBS=ON", "-S", "src", "-B", "build", *std_cmake_args
     system "cmake", "--build", "build"
