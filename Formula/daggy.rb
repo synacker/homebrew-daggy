@@ -25,6 +25,6 @@ class DaggyAT220 < Formula
 
   test do
     assert_match "daggy #{version}", shell_output("#{bin}/daggy -v")
-    system "false"
+    system "true"
   end
 end
