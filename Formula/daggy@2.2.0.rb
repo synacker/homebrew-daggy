@@ -18,7 +18,7 @@ class DaggyAT220 < Formula
   def install
     resource("mustache").stage { cp_r "mustache.hpp", "src" }
 
-    system "cmake", "-D", "VERSION=#{version}", "-D", "BUILD_SHARED_LIBS=ON", "-S", "src", "-B", "build", *std_cmake_args
+    system "cmake", "-D", "VERSION=#{version}.0", "-D", "BUILD_SHARED_LIBS=ON", "-S", "src", "-B", "build", *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
   end
