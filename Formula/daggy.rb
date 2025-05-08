@@ -1,4 +1,4 @@
-class DaggyAT220 < Formula
+class Daggy < Formula
   desc "Daggy - Data Aggregation Utility"
   homepage "https://daggy.gitbook.io"
   url "https://github.com/synacker/daggy/archive/refs/tags/v2.2.0.tar.gz"
