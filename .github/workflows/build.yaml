@@ -1,0 +1,25 @@
+name: Build daggy tap
+on: [push]
+
+jobs:
+    macos-x64:
+        runs-on: macos-13
+        steps:
+            - uses: actions/checkout@v4
+            
+            - name: Build formula
+              run: brew install --build-from-source ./Formula/daggy.rb
+            
+            - name: Print version
+              run: daggy --version
+
+    macos-arm:
+        runs-on: macos-14
+        steps:
+            - uses: actions/checkout@v4
+            
+            - name: Build formula
+              run: brew install --build-from-source ./Formula/daggy.rb
+            
+            - name: Print version
+              run: daggy --version
