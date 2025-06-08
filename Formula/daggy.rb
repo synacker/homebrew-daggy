@@ -1,8 +1,8 @@
 class Daggy < Formula
   desc "Daggy - Data Aggregation Utility"
   homepage "https://daggy.gitbook.io"
-  url "https://github.com/synacker/daggy/archive/refs/tags/v2.2.1.tar.gz"
-  sha256 "15f9c1902c5a2c20717e1de0b48bd32f86b1c768b9b09378483b1260ea957432"
+  url "https://github.com/synacker/daggy/archive/refs/tags/v2.2.3.tar.gz"
+  sha256 "fed4a56d970f37a858a80c2ef1f0fc8d928cd8b1daead166141a538782030864"
   license "MIT"
 
   depends_on "cmake" => :build
